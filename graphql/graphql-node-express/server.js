@@ -6,7 +6,7 @@ var { graphqlHTTP } = require("express-graphql");
 const { buildSchema } = require("graphql");
 
 /**
- * Defining the type systems (GraphQL schema) for the server for the cliwent to validate against
+ * Defining the type systems (GraphQL schema) for the server for the client to validate against
  */
 var schema = buildSchema(`
     type Query {
@@ -38,7 +38,7 @@ const getCourse = function (args) {
 };
 
 /**
- * Function to retirve a list of courses given a specific topic
+ * Function to retrieve a list of courses given a specific topic
  * @param {*} args
  */
 const getCourses = function (args) {
